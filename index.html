@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Fomulir Pendaftaran Komunitas Teknologi</h2>
+  
+    <form action="submit.html" method="post" autocomplete="on">
+
+
+      <fieldset>
+  <legend>Data Pribadi</legend>
+  
+  <!-- Input text -->
+  <label for="Nama Lengkap">Nama Lengkap</label>
+  <input type="text" name="nama" placeholder="Masukkan nama lengkap" required>
+  <br><br>
+
+  <!-- Input email -->
+  <label for="Alamat Email">Alamat Email</label>
+  <input type="email" name="email" placeholder="nama@gmail.com" autocomplete="on">
+  <br><br>
+
+  <!-- Input password -->
+  <label for="Kata Sandi">Kata Sandi</label>
+  <input type="password" name="password" pattern=".{8,}" title="Minimal 8 karakter" required>
+  <br><br>
+
+    <!-- Input number -->
+     <label for="Usia">Usia</label>
+    <input type="number" name="usia" min="17" max="60" required>
+     <br><br>
+
+     <!-- Input date -->
+      <label for="Tanggal Lahir">Tanggal Lahir</label>
+      <input type="date" name="Tanggal Lahir" id="">
+      <br><br>
+
+      <!-- Input Radio -->
+      <label for="Jenis Kelamin">Jenis Kelamin (Laki-laki/Perempuan)</label>
+      <br><br>
+      <label>
+            <input type="radio" name="gender" value="laki-laki">
+            Laki-laki
+        </label><br>
+
+        <label>
+            <input type="radio" name="gender" value="perempuan">
+            Perempuan
+        </label><br><br>
+
+        <!-- Input checkbox -->
+        <label for="Minat">Minat (AI,Web,IoT,Game)</label>
+        <br><br> 
+        <input type="checkbox" name="checkbox" id="">
+        <label for="AI">AI</label>
+        <br>
+        <input type="checkbox" name="checkbox" id="">
+        <label for="Web">Web</label>
+        <br>
+        <input type="checkbox" name="checkbox" id="">
+        <label for="IoT">IoT</label>
+        <br>
+        <input type="checkbox" name="checkbox" id="">
+        <label for="Game">Game</label>
+        <br><br>
+
+        <!-- Input tel -->
+         <label for="Nomor Telepon">Nomor Telepon</label>
+         <input type="tel" name="Nomor telepon" id="">
+         <br><br>
+
+         <!-- Input url -->
+          <label for="Link Portofolio">Link Portofolio</label>
+          <input type="url" name="Link Portofolio" id="">
+          <br><br>
+
+          <!-- Input file -->
+           <label for="Upload foto profil">Upload foto profil</label>
+           <input type="file" name="Upload foto profil" id="">
+           <br><br>
+
+           </fieldset>
+           <br>
+           <!-- Submit button -->
+            <button type="submit">Submit</button>
+            <!-- Reset button -->
+            <button type="reset">Reset</button>
+            
+
+    </form>    
+
+</body>
+</html>
